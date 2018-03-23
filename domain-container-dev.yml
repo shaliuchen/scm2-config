@@ -1,0 +1,48 @@
+spring:
+  redis:
+      host: 192.168.100.45
+      port: 16380
+      # REDIS (RedisProperties)
+      # Redis数据库索引（默认为0）
+      database: 0
+      # Redis服务器连接密码（默认为空）
+      password: Password1
+      # 连接池最大连接数（使用负值表示没有限制）
+      # 连接超时时间（毫秒）
+      timeout: 0
+      pool:
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+  amqp:
+        host: 192.168.100.45
+        username: yzt_test
+        password: Pa789
+        port: 5672
+        concurrentConsumers: 10
+        maxConcurrentConsumers: 100
+
+
+#eureka:
+#  client:
+#    serviceUrl:
+#          defaultZone: http://localhost:19527/eureka/
+
+#redis配置
+
+
+
+
+
+  http:
+    multipart:
+      ## 10M
+      max-file-size: 10485760
+      ## 100M
+      max-request-size: 104857600
+
+

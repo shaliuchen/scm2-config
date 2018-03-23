@@ -1,0 +1,15 @@
+server:
+  host: localhost
+  port: 8080
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 1  #心跳间隔时间1s
+    lease-expiration-duration-in-seconds: 2  #连续2s未响应时将服务注销
+  server:
+#    enable-self-preservation: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
