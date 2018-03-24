@@ -1,0 +1,49 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:19527/eureka/
+  instance:
+    hostname: localhost
+server:
+# 服务端口
+  port: 19610
+feign:
+  hystrix:
+    enabled: true
+spring:
+  application:
+    name: demo2
+  # 数据源配置
+  datasource:
+    driver-class-name: org.h2.Driver
+    jdbc-url: jdbc:h2:~/demo2;AUTO_SERVER=TRUE
+    maximum-pool-size: 50
+    password: demo2
+    username: demo2
+  database:
+    schemaScript: classpath:sql/schema.sql
+    dataScript: classpath:sql/data.sql
+  amqp:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5672
+    concurrentConsumers: 10
+    maxConcurrentConsumers: 100
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    timeout: 0
+    pool:
+      max-active: 100
+      max-wait: -1
+      max-idle: 50
+      min-idle: 0
+# Mybatis配置
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
