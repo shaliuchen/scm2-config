@@ -3,7 +3,7 @@ spring:
     name: gateway
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: 127.0.0.1.0.0
   client:
     serviceUrl:
       defaultZone: http://localhost:19527/eureka/
