@@ -1,4 +1,4 @@
-site_name: 'scm2-config'
+site_name: "scm2-config"
 
 nav:
   - Home: index.md
