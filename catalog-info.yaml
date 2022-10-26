@@ -4,7 +4,7 @@ metadata:
   name: "scm2-config"
   description: "scm2-config ..."
   annotations:
-    github.com/project-slug: shaliuchen/my-springboot-demo
+    github.com/project-slug: shaliuchen/scm2-config
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
