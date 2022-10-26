@@ -6,6 +6,9 @@ metadata:
   tags:
     - java
     - config
+  annotations:
+    github.com/project-slug: shaliuchen/scm2-config
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://example.com/user
       title: Examples Users
