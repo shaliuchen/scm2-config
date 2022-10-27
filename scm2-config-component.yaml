@@ -34,6 +34,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: shaliuchen
+  owner: group: scm2-team
   system: scm2
   providesApis: [swagger-demo]
