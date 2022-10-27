@@ -36,3 +36,4 @@ spec:
   lifecycle: experimental
   owner: shaliuchen
   system: scm2
+  providesApis: [swagger-demo]
